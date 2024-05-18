@@ -4,7 +4,7 @@ const mapAll = document.querySelector('.map-all')
 const reduceAll = document.querySelector('.reduce-all')
 const buttonFilterAll = document.querySelector('.filter-all')
 const buttonDrinkd = document.querySelector('.drink-all')
-const contato = document.querySelector('.contato')
+const contato = document.querySelector('.quem-somos')
 
 function novis(arrayProduct) {
 
@@ -78,7 +78,10 @@ function filtro() {
 }
 
 
-
+function converse() {
+ 
+  contato.innerHTML = '📞(61)99999999'
+}
 
 
 buttonShowAll.addEventListener('click', () => novis(menuOptions))
@@ -86,3 +89,4 @@ mapAll.addEventListener('click', alteradoPreco)
 reduceAll.addEventListener('click', Adicionar)
 buttonFilterAll.addEventListener('click', filtro)
 buttonDrinkd.addEventListener('click', drinks)
+contato.addEventListener('click',converse)
